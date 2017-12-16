@@ -54,7 +54,7 @@
                     </dependency>
                 </dependencies>
                 <configuration>
-                    <sourceDestDir>${project.build.directory}/generated-sources/jaxws-wsimport</sourceDestDir>
+                    <sourceDestDir>${basedir}/src/main/java</sourceDestDir>
                     <xnocompile>true</xnocompile>
                     <verbose>true</verbose>
                     <extension>true</extension>
