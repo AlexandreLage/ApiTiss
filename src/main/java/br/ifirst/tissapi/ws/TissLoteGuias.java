@@ -16,7 +16,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "tissLoteGuias", targetNamespace = "http://www.ans.gov.br/tiss/ws/tipos/tissloteguias/v30302", wsdlLocation = "C:\\Users\\itecbrazil\\Documents\\NetBeansProjects\\TissApi/src/main/resources/schematiss/v3_03_03/tissLoteGuiasV3_03_02.wsdl")
+@WebServiceClient(name = "tissLoteGuias", targetNamespace = "http://www.ans.gov.br/tiss/ws/tipos/tissloteguias/v30302", wsdlLocation = "tissLoteGuiasV3_03_02.wsdl")
 public class TissLoteGuias
     extends Service
 {
@@ -26,10 +26,10 @@ public class TissLoteGuias
     private final static QName TISSLOTEGUIAS_QNAME = new QName("http://www.ans.gov.br/tiss/ws/tipos/tissloteguias/v30302", "tissLoteGuias");
 
     static {
-        TISSLOTEGUIAS_WSDL_LOCATION = br.ifirst.tissapi.ws.TissLoteGuias.class.getResource("C:\\Users\\itecbrazil\\Documents\\NetBeansProjects\\TissApi/src/main/resources/schematiss/v3_03_03/tissLoteGuiasV3_03_02.wsdl");
+        TISSLOTEGUIAS_WSDL_LOCATION = br.ifirst.tissapi.ws.TissLoteGuias.class.getResource("tissLoteGuiasV3_03_02.wsdl");
         WebServiceException e = null;
         if (TISSLOTEGUIAS_WSDL_LOCATION == null) {
-            e = new WebServiceException("Cannot find 'C:\\\\Users\\\\itecbrazil\\\\Documents\\\\NetBeansProjects\\\\TissApi/src/main/resources/schematiss/v3_03_03/tissLoteGuiasV3_03_02.wsdl' wsdl. Place the resource correctly in the classpath.");
+            e = new WebServiceException("Cannot find 'tissLoteGuiasV3_03_02.wsdl' wsdl. Place the resource correctly in the classpath.");
         }
         TISSLOTEGUIAS_EXCEPTION = e;
     }

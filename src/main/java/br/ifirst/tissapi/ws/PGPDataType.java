@@ -59,8 +59,8 @@ public class PGPDataType {
      * <p>
      * Você está obtendo esta propriedade "catch-all" pelo seguinte motivo: 
      * O nome do campo "PGPKeyPacket" é usado por duas partes diferentes de um esquema. Consulte: 
-     * linha 210 de file:/C:/Users/itecbrazil/Documents/NetBeansProjects/TissApi/src/wsdl/xmldsig-core-schema.xsd
-     * linha 206 de file:/C:/Users/itecbrazil/Documents/NetBeansProjects/TissApi/src/wsdl/xmldsig-core-schema.xsd
+     * linha 210 de file:/C:/Users/itecbrazil/Documents/NetBeansProjects/TissApi/src/main/resources/schematiss/v3_03_02/xmldsig-core-schema.xsd
+     * linha 206 de file:/C:/Users/itecbrazil/Documents/NetBeansProjects/TissApi/src/main/resources/schematiss/v3_03_02/xmldsig-core-schema.xsd
      * <p>
      * Para eliminar esta propriedade, aplique uma personalização de propriedade a uma 
      * das seguintes declarações, a fim de alterar seus nomes: 
@@ -81,10 +81,10 @@ public class PGPDataType {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link JAXBElement }{@code <}{@link byte[]}{@code >}
-     * {@link JAXBElement }{@code <}{@link byte[]}{@code >}
-     * {@link Element }
      * {@link Object }
+     * {@link Element }
+     * {@link JAXBElement }{@code <}{@link byte[]}{@code >}
+     * {@link JAXBElement }{@code <}{@link byte[]}{@code >}
      * 
      * 
      */

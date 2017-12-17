@@ -26,10 +26,16 @@
                 <version>2.5</version>
                 <executions>
                     <execution>
+                        <id>wsimport-generate-tissLoteGuiasV3_03_02</id>
+                        <phase>generate-sources</phase>
                         <goals>
                             <goal>wsimport</goal>
                         </goals>
                         <configuration>
+                            <verbose>true</verbose>
+                            <keep>true</keep>
+                            <extension>true</extension>
+                            <wsdlDirectory>${wsdl.dir}</wsdlDirectory>
                             <wsdlFiles>
                                 <wsdlFile>tissLoteGuiasV3_03_02.wsdl</wsdlFile>
                             </wsdlFiles>
@@ -37,13 +43,102 @@
                             <vmArgs>
                                 <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
                                 <vmArg>-Djavax.xml.accessExternalDTD=all</vmArg>
-                                
                             </vmArgs>
-                            <wsdlLocation>${basedir}/src/main/resources/schematiss/v3_03_03/tissLoteGuiasV3_03_02.wsdl</wsdlLocation>
+                            <wsdlLocation>tissLoteGuiasV3_03_02.wsdl</wsdlLocation>
                             <staleFile>${project.build.directory}/jaxws/stale/tissLoteGuiasV3_03_02.stale</staleFile>
                         </configuration>
-                        <id>wsimport-generate-tissLoteGuiasV3_03_02</id>
+                    </execution>
+                    <execution>
+                        <id>wsimport-generate-tissVerificaElegibilidadeV3_03_02</id>
                         <phase>generate-sources</phase>
+                        <goals>
+                            <goal>wsimport</goal>
+                        </goals>
+                        <configuration>
+                            <verbose>true</verbose>
+                            <keep>true</keep>
+                            <extension>true</extension>
+                            <wsdlDirectory>${wsdl.dir}</wsdlDirectory>
+                            <wsdlFiles>
+                                <wsdlFile>tissVerificaElegibilidadeV3_03_02.wsdl</wsdlFile>
+                            </wsdlFiles>
+                            <packageName>br.ifirst.tissapi.ws</packageName>
+                            <vmArgs>
+                                <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
+                                <vmArg>-Djavax.xml.accessExternalDTD=all</vmArg>
+                            </vmArgs>
+                            <wsdlLocation>tissVerificaElegibilidadeV3_03_02.wsdl</wsdlLocation>
+                            <staleFile>${project.build.directory}/jaxws/stale/tissVerificaElegibilidadeV3_03_02.stale</staleFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>wsimport-generate-tissCancelaGuiaV3_03_02</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>wsimport</goal>
+                        </goals>
+                        <configuration>
+                            <verbose>true</verbose>
+                            <keep>true</keep>
+                            <extension>true</extension>
+                            <wsdlDirectory>${wsdl.dir}</wsdlDirectory>
+                            <wsdlFiles>
+                                <wsdlFile>tissCancelaGuiaV3_03_02.wsdl</wsdlFile>
+                            </wsdlFiles>
+                            <packageName>br.ifirst.tissapi.ws</packageName>
+                            <vmArgs>
+                                <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
+                                <vmArg>-Djavax.xml.accessExternalDTD=all</vmArg>
+                            </vmArgs>
+                            <wsdlLocation>tissCancelaGuiaV3_03_02.wsdl</wsdlLocation>
+                            <staleFile>${project.build.directory}/jaxws/stale/tissCancelaGuiaV3_03_02.stale</staleFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>wsimport-generate-tissSolicitacaoStatusAutorizacaoV3_03_02</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>wsimport</goal>
+                        </goals>
+                        <configuration>
+                            <verbose>true</verbose>
+                            <keep>true</keep>
+                            <extension>true</extension>
+                            <wsdlDirectory>${wsdl.dir}</wsdlDirectory>
+                            <wsdlFiles>
+                                <wsdlFile>tissSolicitacaoStatusAutorizacaoV3_03_02.wsdl</wsdlFile>
+                            </wsdlFiles>
+                            <packageName>br.ifirst.tissapi.ws</packageName>
+                            <vmArgs>
+                                <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
+                                <vmArg>-Djavax.xml.accessExternalDTD=all</vmArg>
+                            </vmArgs>
+                            <wsdlLocation>tissSolicitacaoStatusAutorizacaoV3_03_02.wsdl</wsdlLocation>
+                            <staleFile>${project.build.directory}/jaxws/stale/tissSolicitacaoStatusAutorizacaoV3_03_02.stale</staleFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>wsimport-generate-tissSolicitacaoProcedimentoV3_03_02</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>wsimport</goal>
+                        </goals>
+                        <configuration>
+                            <verbose>true</verbose>
+                            <keep>true</keep>
+                            <extension>true</extension>
+                            <wsdlDirectory>${wsdl.dir}</wsdlDirectory>
+                            <wsdlFiles>
+                                <wsdlFile>tissSolicitacaoProcedimentoV3_03_02.wsdl</wsdlFile>
+                            </wsdlFiles>
+                            <packageName>br.ifirst.tissapi.ws</packageName>
+                            <vmArgs>
+                                <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
+                                <vmArg>-Djavax.xml.accessExternalDTD=all</vmArg>
+                            </vmArgs>
+                            <wsdlLocation>tissSolicitacaoProcedimentoV3_03_02.wsdl</wsdlLocation>
+                            <staleFile>${project.build.directory}/jaxws/stale/tissSolicitacaoProcedimentoV3_03_02.stale</staleFile>
+                        </configuration>
                     </execution>
                 </executions>
                 <dependencies>
@@ -82,5 +177,6 @@
     </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <wsdl.dir>${basedir}/src/main/resources/schematiss/v3_03_02/</wsdl.dir>
     </properties>
 </project>
